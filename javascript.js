@@ -22,3 +22,14 @@ function f3()
     document.getElementById("premimi-button").textContent=""+nome+", ecco una sorpresina per te"
     //alert("Eccoti qui "+nome);
 }
+function f4()
+{
+    if(document.getElementByid("nm2").value.length>=3)
+    {
+        document.getElementById("btnInvio").style.display="none";
+    }
+    else
+    {
+        document.getElementById("btnInvio").style.display="block";
+    }
+}
