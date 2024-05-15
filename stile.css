@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-color: #ffa6a6; /* Colore di sfondo pastello */
+}
+
+#container {
+    position: relative;
+    text-align: center;
+}
+
+#premimi-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ffcc00; /* Colore pastello */
+    color: #333;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#premimi-button:hover {
+    background-color: #ffd699; /* Cambio colore al passaggio del mouse */
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px; /* Limita la larghezza dell'overlay su dispositivi piccoli */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    transition: opacity 0.5s, background-color 0.5s; /* Transizioni fluide */
+
+}
+
+#overlay.show {
+    display: block;
+}
+
+#girasoli-img {
+    width: 100%;
+    height: auto; /* Per mantenere le proporzioni */
+    border-radius: 10px; /* Aggiungi bordi arrotondati all'immagine */
+}
+
+#message {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
