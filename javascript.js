@@ -20,5 +20,5 @@ function f3()
 {
     var nome=sessionStorage.getItem("name");
     document.getElementById("premimi-button").textContent=""+nome+", ecco una sorpresina per te"
-    alert(nome);
+    //alert("Eccoti qui "+nome);
 }
