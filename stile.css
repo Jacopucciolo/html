@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /*background-color: #ffa6a6; /* Colore di sfondo pastello */
+    background-color: #f0f0f0; /* Colore di sfondo pastello */
 }
 
 #container {
@@ -17,46 +17,54 @@ body {
 #premimi-button {
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #ffcc00; /* Colore pastello */
+    background-color: #ffb3b3; /* Colore pastello */
     color: #333;
-    font-size: 20px;
+    font-size: 18px; /* Dimensione del testo adattata per dispositivi mobili */
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Transizioni fluide per colore di sfondo e testo */
 }
 
 #premimi-button:hover {
-    background-color: #ffd699; /* Cambio colore al passaggio del mouse */
+    background-color: #ff9999; /* Cambio colore al passaggio del mouse */
 }
 
 #overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 300px; /* Limita la larghezza dell'overlay su dispositivi piccoli */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    border-radius: 10px;
     display: none;
-    transition: opacity 0.5s, background-color 0.5s; /* Transizioni fluide */
-
+    transition: opacity 0.5s; /* Transizione fluide per l'opacità */
 }
 
 #overlay.show {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Opacità al 100% quando l'overlay è visibile */
+}
+
+.content {
+    text-align: center;
 }
 
 #girasoli-img {
-    width: 100%;
-    height: auto; /* Per mantenere le proporzioni */
+    max-width: 90%; /* Massima larghezza per dispositivi mobili */
+    max-height:200px;
+    /*max-height: 80%; /* Massima altezza per dispositivi mobili */
     border-radius: 10px; /* Aggiungi bordi arrotondati all'immagine */
 }
 
 #message {
     color: white;
-    font-size: 18px;
+    font-size: 16px; /* Dimensione del testo adattata per dispositivi mobili */
     margin-top: 10px;
+    width:50vw;
+    margin-left:10px;
+    margin-right: auto;
 }
