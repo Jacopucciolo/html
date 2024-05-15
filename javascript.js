@@ -26,10 +26,10 @@ function f4()
 {
     if(document.getElementById("nm2")!=null && document.getElementById("nm2").value.length>=3)
     {
-        document.getElementById("btnInvio").style.display="none";
+        document.getElementById("btnInvio").style.display="block";
     }
     else
     {
-        document.getElementById("btnInvio").style.display="block";
+        document.getElementById("btnInvio").style.display="none";
     }
 }
