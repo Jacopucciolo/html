@@ -24,7 +24,7 @@ function f3()
 }
 function f4()
 {
-    if(document.getElementByid("nm2").value.length>=3)
+    if(document.getElementById("nm2")!=null && document.getElementById("nm2").value.length>=3)
     {
         document.getElementById("btnInvio").style.display="none";
     }
