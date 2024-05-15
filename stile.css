@@ -17,8 +17,8 @@ body {
 #premimi-button {
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #ffb3b3; /* Colore pastello */
-    color: #333;
+    background-color: #ffdf51; /* Colore pastello */
+    color: #000000;
     font-size: 18px; /* Dimensione del testo adattata per dispositivi mobili */
     border: none;
     border-radius: 10px;
@@ -27,7 +27,7 @@ body {
 }
 
 #premimi-button:hover {
-    background-color: #ff9999; /* Cambio colore al passaggio del mouse */
+    background-color: #d1b742; /* Cambio colore al passaggio del mouse */
 }
 
 #overlay {
