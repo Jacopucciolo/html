@@ -7,7 +7,7 @@ function f() {
         overlay.classList.toggle("show");
         var secMes= document.getElementById("second_message");
         var nome = sessionStorage.getItem("name");
-        secMes.innerHTML="Fammelo un sorriso ora, dai<br>perchè se molto carina qunando lo fai<br>♥"
+        secMes.innerHTML="Fammelo un sorriso ora, dai<br>perchè sei molto carina qunando lo fai<br>♥"
     }, 12000);
 }
 function f2()
