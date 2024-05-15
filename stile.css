@@ -68,3 +68,12 @@ body {
     margin-left:10px;
     margin-right: auto;
 }
+#second_message
+{
+    color: white;
+    font-size: 16px; /* Dimensione del testo adattata per dispositivi mobili */
+    margin-top: 10px;
+    width:50vw;
+    margin-left:10px;
+    margin-right: auto;
+}
